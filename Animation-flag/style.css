@@ -1,0 +1,49 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+.flag {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex; 
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.yellow {
+    height: 50px;
+    width: calc(100% / 3);
+    background-color: yellow;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+.green{
+    height: 50px;
+    width: calc(100% / 3);
+    background-color: green;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+.red {
+    height: 50px;
+    width: calc(100% / 3);
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 6s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes animation {
+    from {
+        height: 50px;
+    }
+    to {
+        height: 100px;
+    }
+}
